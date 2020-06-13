@@ -26,5 +26,6 @@ jobs:
     
     # Runs a single command using the runners shell
     - name: Run a one-line script
-      env: SNOW: 'SNOW'
+      env: 
+        SNOW: ${{SNOW}} 
       run: python3 demo.py
